@@ -1,0 +1,183 @@
+
+============================================================
+  REACT V1 AGENT — EVALUATION REPORT
+============================================================
+  Timestamp : 2026-07-02T00:27:50.007856
+  Model     : qwen2.5-coder:7b
+  Max Iter  : 5
+  Total     : 80 cases
+============================================================
+
+────────────────────────────────────────────────────────────
+  PER-CATEGORY BREAKDOWN
+────────────────────────────────────────────────────────────
+
+  ┌─ ARITHMETIC (20 cases)
+  │  Tool Accuracy    :  90.0%  (18/20)
+  │  Task Success     :  90.0%  (18/20)
+  │  Finish Accuracy  :  90.0%  (18/20)
+  │  Average Steps    :   2.1
+  │  Loop Rate        :   0.0%  (0/20)
+  │  Error Rate       :  10.0%  (2/20)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ SEARCH (20 cases)
+  │  Tool Accuracy    : 100.0%  (20/20)
+  │  Task Success     : 100.0%  (20/20)
+  │  Finish Accuracy  : 100.0%  (20/20)
+  │  Average Steps    :   2.0
+  │  Loop Rate        :   0.0%  (0/20)
+  │  Error Rate       :   0.0%  (0/20)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ MULTISTEP (20 cases)
+  │  Tool Accuracy    :  55.0%  (11/20)
+  │  Task Success     :  95.0%  (19/20)
+  │  Finish Accuracy  :  95.0%  (19/20)
+  │  Average Steps    :   3.6
+  │  Loop Rate        :   5.0%  (1/20)
+  │  Error Rate       :   0.0%  (0/20)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ FAILURE (10 cases)
+  │  Tool Accuracy    :  50.0%  (5/10)
+  │  Task Success     : 100.0%  (10/10)
+  │  Finish Accuracy  : 100.0%  (10/10)
+  │  Average Steps    :   2.1
+  │  Loop Rate        :   0.0%  (0/10)
+  │  Error Rate       :   0.0%  (0/10)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ AMBIGUOUS (10 cases)
+  │  Tool Accuracy    :  50.0%  (5/10)
+  │  Task Success     : 100.0%  (10/10)
+  │  Finish Accuracy  : 100.0%  (10/10)
+  │  Average Steps    :   2.6
+  │  Loop Rate        :   0.0%  (0/10)
+  │  Error Rate       :   0.0%  (0/10)
+  └─────────────────────────────────────────────────────────
+
+============================================================
+  GLOBAL SUMMARY
+============================================================
+  Tool Accuracy    :  73.8%  (59/80)
+  Finish Accuracy  :  96.2%  (77/80)
+  Average Steps    :   2.5
+  Loop Rate        :   1.2%  (1/80)
+  Error Rate       :   2.5%  (2/80)
+============================================================
+
+────────────────────────────────────────────────────────────
+  DIFFICULTY BREAKDOWN
+────────────────────────────────────────────────────────────
+  EASY      n= 24  tool_acc= 87.5%  loop_rate=  0.0%
+  MEDIUM    n= 35  tool_acc= 77.1%  loop_rate=  2.9%
+  HARD      n= 21  tool_acc= 52.4%  loop_rate=  0.0%
+============================================================
+
+────────────────────────────────────────────────────────────
+  MISMATCHED CASES (21)
+────────────────────────────────────────────────────────────
+  [arithmetic] ID=18 (hard)
+    Query:    I earned 4500 per month for 3 months, spent 8000 total, and 
+    Expected: ['calculator', 'calculator', 'calculator', 'finish']
+    Actual:   []
+    Error:    ValueError: Failed to parse LLM response: Expecting ',' deli
+
+  [arithmetic] ID=20 (hard)
+    Query:    A rectangle has sides 17.5 and 23.8. What is the area and wh
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   []
+    Error:    ValueError: Failed to parse LLM response: Expecting ',' deli
+
+  [multistep] ID=1 (medium)
+    Query:    What is the square root of the year Python was created?
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=2 (medium)
+    Query:    How many hours are in the number of days in a leap year?
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=3 (medium)
+    Query:    The speed of sound is approximately 343 m/s. How far does so
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'search', 'search']
+
+  [multistep] ID=7 (medium)
+    Query:    What is the height of Mount Everest in meters divided by the
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=9 (medium)
+    Query:    What is the year the Berlin Wall fell minus the year World W
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=14 (hard)
+    Query:    If a car travels at the speed limit on German autobahns (rec
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=15 (hard)
+    Query:    What is the number of bones in the human body minus the numb
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=16 (hard)
+    Query:    Calculate the area of a circle with radius equal to the numb
+    Expected: ['search', 'calculator', 'calculator', 'finish']
+    Actual:   ['search', 'calculator', 'finish']
+
+  [multistep] ID=17 (hard)
+    Query:    What is the GDP of Luxembourg in billions divided by its pop
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [failure] ID=2 (medium)
+    Query:    What is the square root of -16?
+    Expected: ['calculator', 'finish']
+    Actual:   ['calculator', 'search', 'finish']
+
+  [failure] ID=5 (hard)
+    Query:    Calculate the sum of all integers
+    Expected: ['finish']
+    Actual:   ['search', 'finish']
+
+  [failure] ID=6 (medium)
+    Query:    If a circle has four corners, how many degrees is each corne
+    Expected: ['finish']
+    Actual:   ['search', 'finish']
+
+  [failure] ID=8 (easy)
+    Query:    Multiply the word 'hello' by the word 'world'
+    Expected: ['calculator', 'finish']
+    Actual:   ['search', 'finish']
+
+  [failure] ID=10 (hard)
+    Query:    What is the value of infinity divided by infinity?
+    Expected: ['finish']
+    Actual:   ['search', 'finish']
+
+  [ambiguous] ID=2 (medium)
+    Query:    What is the value of pi times something big?
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'search', 'finish']
+
+  [ambiguous] ID=3 (easy)
+    Query:    How much is a lot?
+    Expected: ['finish']
+    Actual:   ['search', 'finish']
+
+  [ambiguous] ID=4 (easy)
+    Query:    Calculate the distance
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'search', 'search', 'finish']
+
+  [ambiguous] ID=7 (hard)
+    Query:    How big is it compared to the other one?
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'search', 'finish']
+
+  ... and 1 more
