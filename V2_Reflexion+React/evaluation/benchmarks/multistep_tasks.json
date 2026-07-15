@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "query": "What is the square root of the year Python was created?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for Python creation year then calculate sqrt then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 2,
+        "query": "How many hours are in the number of days in a leap year?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for leap year days then multiply by 24 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "query": "The speed of sound is approximately 343 m/s. How far does sound travel in the number of seconds equal to the number of US states?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for number of US states then multiply by 343 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "query": "What is the population of Iceland divided by 1000?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for Iceland population then divide by 1000 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "query": "What is 2 raised to the power of the number of planets in our solar system?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for number of planets then calculate power then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "query": "How many minutes are in the number of books in the Harry Potter series multiplied by 60?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for number of HP books then multiply by 60 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "query": "What is the height of Mount Everest in meters divided by the number of continents?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for Everest height then divide by 7 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "query": "The atomic number of gold multiplied by 3, what is the result?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for gold atomic number then multiply by 3 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "query": "What is the year the Berlin Wall fell minus the year World War 2 ended?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for both years then subtract then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "query": "If each episode of a typical anime season has 24 minutes, and a season has the same number of episodes as the number of letters in the Japanese alphabet (hiragana), how many total minutes is that?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for hiragana count then multiply by 24 then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 11,
+        "query": "What is the square root of the distance from Earth to the Moon in kilometers?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for Earth-Moon distance then sqrt then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "query": "How many seconds are in the number of days in the month of February during a non-leap year?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for February days then multiply by 86400 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "query": "What is the boiling point of ethanol in Celsius multiplied by 5?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for ethanol boiling point then multiply by 5 then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "query": "If a car travels at the speed limit on German autobahns (recommended speed in km/h) for 3.5 hours, how far does it travel?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for autobahn speed recommendation then multiply by 3.5 then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 15,
+        "query": "What is the number of bones in the human body minus the number of teeth in an adult human?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for bones count and teeth count then subtract then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 16,
+        "query": "Calculate the area of a circle with radius equal to the number of symphonies Beethoven composed",
+        "expected_tools": ["search", "calculator", "calculator", "finish"],
+        "expected_behavior": "search for symphony count then compute radius squared then multiply by pi then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 17,
+        "query": "What is the GDP of Luxembourg in billions divided by its population in millions?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for GDP and population then divide then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 18,
+        "query": "The Great Wall of China is approximately how many kilometers long? If you walked 5 km per hour, how many hours would it take to walk the entire length?",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for Great Wall length then divide by 5 then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 19,
+        "query": "What is the year Linux was first released plus the number of original Unix developers?",
+        "expected_tools": ["search", "search", "calculator", "finish"],
+        "expected_behavior": "search for Linux release year then search for Unix developers then add then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 20,
+        "query": "If you stack the number of floors in the Burj Khalifa and each floor is 3.5 meters tall, what is the approximate height in meters? Compare with the actual height.",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "search for floor count then multiply by 3.5 then finish with comparison",
+        "difficulty": "hard"
+    }
+]
