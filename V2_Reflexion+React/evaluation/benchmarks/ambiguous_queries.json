@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "query": "Tell me about 42",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "ambiguous: could be math or cultural reference, agent should search for context then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 2,
+        "query": "What is the value of pi times something big?",
+        "expected_tools": ["finish"],
+        "expected_behavior": "underspecified operand, agent should ask for clarification or finish noting ambiguity",
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "query": "How much is a lot?",
+        "expected_tools": ["finish"],
+        "expected_behavior": "completely vague query, agent should finish noting ambiguity",
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "query": "Calculate the distance",
+        "expected_tools": ["finish"],
+        "expected_behavior": "missing operands and context, agent should finish noting insufficient information",
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "query": "Apple",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "ambiguous: fruit or company, agent should search and provide context-dependent answer",
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "query": "What is Mercury?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "ambiguous: planet, element, or mythology, agent should search and disambiguate",
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "query": "How big is it compared to the other one?",
+        "expected_tools": ["finish"],
+        "expected_behavior": "missing referents, agent should finish noting insufficient context",
+        "difficulty": "hard"
+    },
+    {
+        "id": 8,
+        "query": "Convert 100",
+        "expected_tools": ["finish"],
+        "expected_behavior": "missing source and target units, agent should finish noting ambiguity",
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "query": "What is the difference between Java?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "incomplete comparison, agent should search and provide what info it can or note ambiguity",
+        "difficulty": "hard"
+    },
+    {
+        "id": 10,
+        "query": "Find the average of the population and the area of a country",
+        "expected_tools": ["search", "calculator", "finish"],
+        "expected_behavior": "mixed intent with missing country, agent may search then calculate or note ambiguity",
+        "difficulty": "hard"
+    }
+]
