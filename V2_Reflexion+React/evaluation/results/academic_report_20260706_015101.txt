@@ -1,0 +1,51 @@
+
+============================================================
+  REACT V1 AGENT — ACADEMIC BENCHMARK REPORT
+============================================================
+  Timestamp  : 2026-07-06T01:51:01.432960
+  Model      : qwen2.5-coder:7b
+  Max Iter   : 2
+  Total      : 1 cases
+============================================================
+
+────────────────────────────────────────────────────────────
+  GSM8K (Grade School Math) — 1 samples
+────────────────────────────────────────────────────────────
+  Answer Accuracy (EM) :   0.0%  (0/1)
+  Finish Rate          : 100.0%  (1/1)
+  Used Calculator      : 100.0%  (1/1)
+  Average Steps        :   2.0
+  Loop Rate            :   0.0%  (0/1)
+  Error Rate           :   0.0%  (0/1)
+  Avg Time/Query       :  10.8s
+
+  Difficulty Breakdown:
+    MEDIUM    n=  1  acc=  0.0%
+
+============================================================
+  ARCHITECTURE HEALTH (aggregated across all benchmarks)
+============================================================
+  Overall Finish Rate  : 100.0%
+  Overall Loop Rate    :   0.0%
+  Overall Avg Steps    :   2.0
+  Overall Error Rate   :   0.0%
+  Total Runtime        :  10.8s
+============================================================
+
+============================================================
+  REFLEXION METRICS
+============================================================
+  Reflection Rate:                 0.0%
+  Reflection Success Rate:         0.0%
+  Average Reflections per Query:   0.0
+  Most Common Reflection Type:   none
+============================================================
+
+────────────────────────────────────────────────────────────
+  SAMPLE INCORRECT ANSWERS (first 15 of 1)
+────────────────────────────────────────────────────────────
+  [gsm8k] ID=1309 (medium)
+    Q:    The girls are trying to raise money for a carnival. Kim
+    Pred: 1450.0
+    Gold: 2280
+
