@@ -1,0 +1,190 @@
+
+============================================================
+  REACT V1 AGENT — EVALUATION REPORT
+============================================================
+  Timestamp : 2026-07-06T02:32:02.892327
+  Model     : qwen2.5-coder:7b
+  Max Iter  : 5
+  Total     : 80 cases
+============================================================
+
+────────────────────────────────────────────────────────────
+  PER-CATEGORY BREAKDOWN
+────────────────────────────────────────────────────────────
+
+  ┌─ ARITHMETIC (20 cases)
+  │  Tool Accuracy    :  85.0%  (17/20)
+  │  Task Success     : 100.0%  (20/20)
+  │  Finish Accuracy  : 100.0%  (20/20)
+  │  Average Steps    :   2.5
+  │  Loop Rate        :   0.0%  (0/20)
+  │  Error Rate       :   0.0%  (0/20)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ SEARCH (20 cases)
+  │  Tool Accuracy    : 100.0%  (20/20)
+  │  Task Success     : 100.0%  (20/20)
+  │  Finish Accuracy  : 100.0%  (20/20)
+  │  Average Steps    :   2.0
+  │  Loop Rate        :   0.0%  (0/20)
+  │  Error Rate       :   0.0%  (0/20)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ MULTISTEP (20 cases)
+  │  Tool Accuracy    :  55.0%  (11/20)
+  │  Task Success     :  90.0%  (18/20)
+  │  Finish Accuracy  :  90.0%  (18/20)
+  │  Average Steps    :   3.4
+  │  Loop Rate        :  15.0%  (3/20)
+  │  Error Rate       :   0.0%  (0/20)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ FAILURE (10 cases)
+  │  Tool Accuracy    :  60.0%  (6/10)
+  │  Task Success     : 100.0%  (10/10)
+  │  Finish Accuracy  : 100.0%  (10/10)
+  │  Average Steps    :   2.1
+  │  Loop Rate        :   0.0%  (0/10)
+  │  Error Rate       :   0.0%  (0/10)
+  └─────────────────────────────────────────────────────────
+
+  ┌─ AMBIGUOUS (10 cases)
+  │  Tool Accuracy    :  40.0%  (4/10)
+  │  Task Success     : 100.0%  (10/10)
+  │  Finish Accuracy  : 100.0%  (10/10)
+  │  Average Steps    :   2.4
+  │  Loop Rate        :   0.0%  (0/10)
+  │  Error Rate       :   0.0%  (0/10)
+  └─────────────────────────────────────────────────────────
+
+============================================================
+  GLOBAL SUMMARY
+============================================================
+  Tool Accuracy    :  72.5%  (58/80)
+  Finish Accuracy  :  97.5%  (78/80)
+  Average Steps    :   2.5
+  Loop Rate        :   3.8%  (3/80)
+  Error Rate       :   0.0%  (0/80)
+============================================================
+
+============================================================
+  REFLEXION METRICS
+============================================================
+  Reflection Rate:                28.7%
+  Reflection Success Rate:        34.8%
+  Average Reflections per Query:   0.4
+  Most Common Reflection Type:   repeated_tool_usage
+============================================================
+
+────────────────────────────────────────────────────────────
+  DIFFICULTY BREAKDOWN
+────────────────────────────────────────────────────────────
+  EASY      n= 24  tool_acc= 87.5%  loop_rate=  0.0%
+  MEDIUM    n= 35  tool_acc= 77.1%  loop_rate=  2.9%
+  HARD      n= 21  tool_acc= 47.6%  loop_rate=  9.5%
+============================================================
+
+────────────────────────────────────────────────────────────
+  MISMATCHED CASES (22)
+────────────────────────────────────────────────────────────
+  [arithmetic] ID=12 (medium)
+    Query:    If I have 500 and spend 137 and then spend 89 more, how much
+    Expected: ['calculator', 'finish']
+    Actual:   ['calculator', 'calculator', 'finish']
+
+  [arithmetic] ID=18 (hard)
+    Query:    I earned 4500 per month for 3 months, spent 8000 total, and 
+    Expected: ['calculator', 'calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator', 'finish']
+
+  [arithmetic] ID=20 (hard)
+    Query:    A rectangle has sides 17.5 and 23.8. What is the area and wh
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['search', 'calculator', 'calculator', 'finish']
+
+  [multistep] ID=1 (medium)
+    Query:    What is the square root of the year Python was created?
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'finish']
+
+  [multistep] ID=6 (medium)
+    Query:    How many minutes are in the number of books in the Harry Pot
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'finish']
+
+  [multistep] ID=7 (medium)
+    Query:    What is the height of Mount Everest in meters divided by the
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'search', 'calculator']
+
+  [multistep] ID=9 (medium)
+    Query:    What is the year the Berlin Wall fell minus the year World W
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=14 (hard)
+    Query:    If a car travels at the speed limit on German autobahns (rec
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=15 (hard)
+    Query:    What is the number of bones in the human body minus the numb
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'calculator', 'finish']
+
+  [multistep] ID=16 (hard)
+    Query:    Calculate the area of a circle with radius equal to the numb
+    Expected: ['search', 'calculator', 'calculator', 'finish']
+    Actual:   ['search', 'calculator', 'finish']
+
+  [multistep] ID=17 (hard)
+    Query:    What is the GDP of Luxembourg in billions divided by its pop
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'search', 'search']
+
+  [multistep] ID=20 (hard)
+    Query:    If you stack the number of floors in the Burj Khalifa and ea
+    Expected: ['search', 'calculator', 'finish']
+    Actual:   ['search', 'search', 'search', 'finish']
+
+  [failure] ID=2 (medium)
+    Query:    What is the square root of -16?
+    Expected: ['calculator', 'finish']
+    Actual:   ['calculator', 'search', 'finish']
+
+  [failure] ID=5 (hard)
+    Query:    Calculate the sum of all integers
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'finish']
+
+  [failure] ID=6 (medium)
+    Query:    If a circle has four corners, how many degrees is each corne
+    Expected: ['finish']
+    Actual:   ['search', 'finish']
+
+  [failure] ID=8 (easy)
+    Query:    Multiply the word 'hello' by the word 'world'
+    Expected: ['calculator', 'finish']
+    Actual:   ['search', 'finish']
+
+  [ambiguous] ID=2 (medium)
+    Query:    What is the value of pi times something big?
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'search', 'finish']
+
+  [ambiguous] ID=3 (easy)
+    Query:    How much is a lot?
+    Expected: ['finish']
+    Actual:   ['search', 'finish']
+
+  [ambiguous] ID=4 (easy)
+    Query:    Calculate the distance
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'finish']
+
+  [ambiguous] ID=7 (hard)
+    Query:    How big is it compared to the other one?
+    Expected: ['finish']
+    Actual:   ['search', 'search', 'finish']
+
+  ... and 2 more
