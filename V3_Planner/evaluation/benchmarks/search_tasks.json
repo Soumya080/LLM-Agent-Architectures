@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "query": "What is the capital of France?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for capital then finish with answer",
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "query": "Who invented the telephone?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for inventor then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "query": "What year was Python programming language created?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for Python creation year then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "query": "What is the boiling point of water in Celsius?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for boiling point then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "query": "Who wrote the novel 1984?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for author then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "query": "What is the speed of light in meters per second?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for speed of light then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 7,
+        "query": "What is the chemical formula for table salt?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for chemical formula then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "query": "Who is the CEO of Tesla?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for CEO then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 9,
+        "query": "What planet is known as the Red Planet?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 10,
+        "query": "What is the largest ocean on Earth?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for largest ocean then finish",
+        "difficulty": "easy"
+    },
+    {
+        "id": 11,
+        "query": "What programming language was used to build the Linux kernel?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for Linux kernel language then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "query": "What is the half-life of Carbon-14?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for half-life then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "query": "Which country has the most Nobel Prize winners?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for Nobel Prize statistics then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "query": "What algorithm does Google PageRank use?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for PageRank algorithm then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "query": "What is the Chandrasekhar limit in solar masses?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for Chandrasekhar limit then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "query": "Who developed the theory of general relativity and in what year?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for general relativity history then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "query": "What is the current world record for the 100 meter sprint?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for current record then finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "query": "What are the main differences between TCP and UDP protocols?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for protocol differences then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 19,
+        "query": "What is the mechanism of action of CRISPR-Cas9?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for CRISPR mechanism then finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 20,
+        "query": "What is the Kolmogorov complexity of a random binary string?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "search for Kolmogorov complexity definition then finish",
+        "difficulty": "hard"
+    }
+]
