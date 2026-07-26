@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "query": "Divide 100 by 0",
+        "expected_tools": ["calculator", "finish"],
+        "expected_behavior": "calculator should raise division by zero error, agent should report the error and finish gracefully",
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "query": "What is the square root of -16?",
+        "expected_tools": ["calculator", "finish"],
+        "expected_behavior": "calculator should raise math domain error for negative sqrt, agent should handle gracefully",
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "query": "What is the color of the number 7?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "nonsensical query, agent should search and then finish with an acknowledgement that the question is unanswerable",
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "query": "What was the exact temperature in Tokyo on March 15 in the year 45000 BC?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "impossible historical query, agent should search then finish noting data unavailability",
+        "difficulty": "hard"
+    },
+    {
+        "id": 5,
+        "query": "Calculate the sum of all integers",
+        "expected_tools": ["finish"],
+        "expected_behavior": "mathematically undefined infinite sum, agent should recognize impossibility and finish",
+        "difficulty": "hard"
+    },
+    {
+        "id": 6,
+        "query": "If a circle has four corners, how many degrees is each corner?",
+        "expected_tools": ["finish"],
+        "expected_behavior": "contradictory premise, circles do not have corners, agent should recognize contradiction and finish",
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "query": "What is the weight of the internet?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "absurd query, agent should search then finish with clarification that the internet has no physical weight",
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "query": "Multiply the word 'hello' by the word 'world'",
+        "expected_tools": ["calculator", "finish"],
+        "expected_behavior": "non-numeric operands should cause calculator error, agent should handle gracefully",
+        "difficulty": "easy"
+    },
+    {
+        "id": 9,
+        "query": "Who was the 100th president of the United States?",
+        "expected_tools": ["search", "finish"],
+        "expected_behavior": "no 100th president exists, agent should search and finish noting this",
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "query": "What is the value of infinity divided by infinity?",
+        "expected_tools": ["finish"],
+        "expected_behavior": "mathematically indeterminate form, agent should recognize and finish with explanation",
+        "difficulty": "hard"
+    }
+]
