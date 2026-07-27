@@ -1,0 +1,98 @@
+
+============================================================
+  REACT V1 AGENT — EVALUATION REPORT
+============================================================
+  Timestamp : 2026-07-06T01:17:54.120244
+  Model     : qwen2.5-coder:7b
+  Max Iter  : 2
+  Total     : 20 cases
+============================================================
+
+────────────────────────────────────────────────────────────
+  PER-CATEGORY BREAKDOWN
+────────────────────────────────────────────────────────────
+
+  ┌─ ARITHMETIC (20 cases)
+  │  Tool Accuracy    :  55.0%  (11/20)
+  │  Task Success     :  55.0%  (11/20)
+  │  Finish Accuracy  :  55.0%  (11/20)
+  │  Average Steps    :   2.0
+  │  Loop Rate        :  45.0%  (9/20)
+  │  Error Rate       :   0.0%  (0/20)
+  └─────────────────────────────────────────────────────────
+
+============================================================
+  GLOBAL SUMMARY
+============================================================
+  Tool Accuracy    :  55.0%  (11/20)
+  Finish Accuracy  :  55.0%  (11/20)
+  Average Steps    :   2.0
+  Loop Rate        :  45.0%  (9/20)
+  Error Rate       :   0.0%  (0/20)
+============================================================
+
+============================================================
+  REFLEXION METRICS
+============================================================
+  Reflection Rate:                 0.0%
+  Reflection Success Rate:         0.0%
+  Average Reflections per Query:   0.0
+  Most Common Reflection Type:   none
+============================================================
+
+────────────────────────────────────────────────────────────
+  DIFFICULTY BREAKDOWN
+────────────────────────────────────────────────────────────
+  EASY      n= 10  tool_acc=100.0%  loop_rate=  0.0%
+  MEDIUM    n=  6  tool_acc= 16.7%  loop_rate= 83.3%
+  HARD      n=  4  tool_acc=  0.0%  loop_rate=100.0%
+============================================================
+
+────────────────────────────────────────────────────────────
+  MISMATCHED CASES (9)
+────────────────────────────────────────────────────────────
+  [arithmetic] ID=11 (medium)
+    Query:    What is 25 * 16 + 100?
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=12 (medium)
+    Query:    If I have 500 and spend 137 and then spend 89 more, how much
+    Expected: ['calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=13 (medium)
+    Query:    What is 3 to the power of 5 divided by 9?
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=14 (medium)
+    Query:    Calculate the square root of 625 and then multiply it by 4
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=15 (medium)
+    Query:    What is 17 * 23 - 150?
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=16 (hard)
+    Query:    Compute (100 + 200) * 3 / 5
+    Expected: ['calculator', 'calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=17 (hard)
+    Query:    What is the square root of 2 to the power of 16?
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=18 (hard)
+    Query:    I earned 4500 per month for 3 months, spent 8000 total, and 
+    Expected: ['calculator', 'calculator', 'calculator', 'finish']
+    Actual:   ['calculator', 'calculator']
+
+  [arithmetic] ID=20 (hard)
+    Query:    A rectangle has sides 17.5 and 23.8. What is the area and wh
+    Expected: ['calculator', 'calculator', 'finish']
+    Actual:   ['search', 'calculator']
+
