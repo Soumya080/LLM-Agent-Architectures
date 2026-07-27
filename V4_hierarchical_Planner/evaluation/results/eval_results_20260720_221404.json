@@ -1,0 +1,654 @@
+{
+  "arithmetic": [
+    {
+      "case_id": 1,
+      "query": "What is 15 + 27?",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single addition operation then finish",
+      "actual_tools": [
+        "finish",
+        "finish"
+      ],
+      "final_answer": "The unique properties of the number 10 are: it is the sum of two consecutive integers (4 and 6), it is a composite number with four divisors (1, 2, 5, and 10), it is a triangular number (the sum of the first 4 natural numbers), and it is a decagonal number.",
+      "iteration_count": 1,
+      "agent_finished": true,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": false,
+      "elapsed_seconds": 283.5281994342804,
+      "reflection_count": 1,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 1
+      }
+    },
+    {
+      "case_id": 2,
+      "query": "What is 144 divided by 12?",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single division operation then finish",
+      "actual_tools": [
+        "search",
+        "calculator",
+        "finish",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 180.08889818191528,
+      "reflection_count": 4,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 4
+      }
+    },
+    {
+      "case_id": 3,
+      "query": "Multiply 8 by 13",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single multiplication operation then finish",
+      "actual_tools": [
+        "search",
+        "calculator",
+        "search",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 1211.4159071445465,
+      "reflection_count": 3,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 3
+      }
+    },
+    {
+      "case_id": 4,
+      "query": "Subtract 45 from 100",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single subtraction operation then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "finish",
+        "finish"
+      ],
+      "final_answer": "55",
+      "iteration_count": 3,
+      "agent_finished": true,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": false,
+      "elapsed_seconds": 182.63418459892273,
+      "reflection_count": 3,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 2,
+        "repeated_tool_usage": 1
+      }
+    },
+    {
+      "case_id": 5,
+      "query": "What is the square root of 256?",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single sqrt operation then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 216.74032068252563,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 5
+      }
+    },
+    {
+      "case_id": 6,
+      "query": "What is 2 to the power of 10?",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single power operation then finish",
+      "actual_tools": [
+        "search",
+        "search",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 225.1951620578766,
+      "reflection_count": 4,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "repeated_tool_usage": 1,
+        "generic_failure": 3
+      }
+    },
+    {
+      "case_id": 7,
+      "query": "Calculate 350 + 275 + 125",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "addition of three operands then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "finish",
+        "finish"
+      ],
+      "final_answer": "750",
+      "iteration_count": 3,
+      "agent_finished": true,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": false,
+      "elapsed_seconds": 316.8972339630127,
+      "reflection_count": 3,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 2,
+        "repeated_tool_usage": 1
+      }
+    },
+    {
+      "case_id": 8,
+      "query": "What is 999 minus 456?",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single subtraction then finish",
+      "actual_tools": [
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 1,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 58.107842683792114,
+      "reflection_count": 1,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 1
+      }
+    },
+    {
+      "case_id": 9,
+      "query": "Divide 1000 by 8",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single division then finish",
+      "actual_tools": [
+        "calculator",
+        "finish",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 224.63119077682495,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 5
+      }
+    },
+    {
+      "case_id": 10,
+      "query": "What is the square root of 2?",
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "sqrt of irrational number then finish",
+      "actual_tools": [
+        "search",
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 204.18737816810608,
+      "reflection_count": 4,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "repeated_tool_usage": 4
+      }
+    },
+    {
+      "case_id": 11,
+      "query": "What is 25 * 16 + 100?",
+      "category": "arithmetic",
+      "difficulty": "medium",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "multiply first then add in second step then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 198.53679275512695,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 3,
+        "repeated_tool_usage": 2
+      }
+    },
+    {
+      "case_id": 12,
+      "query": "If I have 500 and spend 137 and then spend 89 more, how much do I have left?",
+      "category": "arithmetic",
+      "difficulty": "medium",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "chained subtraction then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 219.31643271446228,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 5
+      }
+    },
+    {
+      "case_id": 13,
+      "query": "What is 3 to the power of 5 divided by 9?",
+      "category": "arithmetic",
+      "difficulty": "medium",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "power operation then division then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "finish",
+        "finish"
+      ],
+      "final_answer": "27.0",
+      "iteration_count": 3,
+      "agent_finished": true,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": false,
+      "elapsed_seconds": 183.04565930366516,
+      "reflection_count": 3,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 2,
+        "repeated_tool_usage": 1
+      }
+    },
+    {
+      "case_id": 14,
+      "query": "Calculate the square root of 625 and then multiply it by 4",
+      "category": "arithmetic",
+      "difficulty": "medium",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "sqrt first then multiply result by 4 then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "finish",
+        "finish"
+      ],
+      "final_answer": "100",
+      "iteration_count": 3,
+      "agent_finished": true,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": false,
+      "elapsed_seconds": 3610.451940536499,
+      "reflection_count": 3,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 3
+      }
+    },
+    {
+      "case_id": 15,
+      "query": "What is 17 * 23 - 150?",
+      "category": "arithmetic",
+      "difficulty": "medium",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "multiply then subtract then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 442.3038377761841,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 3,
+        "repeated_tool_usage": 2
+      }
+    },
+    {
+      "case_id": 16,
+      "query": "Compute (100 + 200) * 3 / 5",
+      "category": "arithmetic",
+      "difficulty": "hard",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "add then multiply then divide then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 514.8939945697784,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 5
+      }
+    },
+    {
+      "case_id": 17,
+      "query": "What is the square root of 2 to the power of 16?",
+      "category": "arithmetic",
+      "difficulty": "hard",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "power first then sqrt then finish",
+      "actual_tools": [
+        "search",
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 920.1588220596313,
+      "reflection_count": 4,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "repeated_tool_usage": 2,
+        "generic_failure": 1,
+        "broad_search_query": 1
+      }
+    },
+    {
+      "case_id": 18,
+      "query": "I earned 4500 per month for 3 months, spent 8000 total, and invested half the remainder. How much did I invest?",
+      "category": "arithmetic",
+      "difficulty": "hard",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "multiply earnings then subtract spending then divide by 2 then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 343.8754041194916,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 4,
+        "repeated_tool_usage": 1
+      }
+    },
+    {
+      "case_id": 19,
+      "query": "What is 7 factorial? Calculate 7 * 6 * 5 * 4 * 3 * 2 * 1",
+      "category": "arithmetic",
+      "difficulty": "medium",
+      "expected_tools": [
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "single multiply with all operands then finish",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": false,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 2421.7522683143616,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 2,
+        "repeated_tool_usage": 3
+      }
+    },
+    {
+      "case_id": 20,
+      "query": "A rectangle has sides 17.5 and 23.8. What is the area and what is the perimeter?",
+      "category": "arithmetic",
+      "difficulty": "hard",
+      "expected_tools": [
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "expected_behavior": "multiply for area then compute perimeter then finish with both values",
+      "actual_tools": [
+        "calculator",
+        "calculator",
+        "calculator",
+        "calculator",
+        "finish"
+      ],
+      "final_answer": null,
+      "iteration_count": 5,
+      "agent_finished": false,
+      "tool_sequence_match": false,
+      "used_finish": true,
+      "had_error": false,
+      "error_message": "",
+      "looped": true,
+      "elapsed_seconds": 401.131938457489,
+      "reflection_count": 5,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 4,
+        "repeated_tool_usage": 1
+      }
+    }
+  ]
+}
