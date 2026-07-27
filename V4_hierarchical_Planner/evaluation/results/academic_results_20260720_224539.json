@@ -1,0 +1,110 @@
+{
+  "gsm8k": [
+    {
+      "case_id": 1309,
+      "benchmark": "gsm8k",
+      "query": "The girls are trying to raise money for a carnival. Kim raises $320 more than Alexandra, who raises $430, and Maryam raises $400 more than Sarah, who raises $300. How much money, in dollars, did they all raise in total?",
+      "difficulty": "medium",
+      "ground_truth": "2280",
+      "final_answer": "$430",
+      "actual_tools": [
+        "finish",
+        "finish"
+      ],
+      "iteration_count": 1,
+      "agent_finished": true,
+      "answer_correct": false,
+      "answer_score": 0.0,
+      "eval_method": "numeric_exact_match",
+      "normalized_predicted": "430.0",
+      "normalized_ground_truth": "2280",
+      "used_finish": true,
+      "used_search": false,
+      "used_calculator": false,
+      "looped": false,
+      "had_error": false,
+      "error_message": "",
+      "elapsed_seconds": 372.0272252559662,
+      "reflection_count": 1,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "generic_failure": 1
+      }
+    }
+  ],
+  "hotpotqa": [
+    {
+      "case_id": 5238,
+      "benchmark": "hotpotqa",
+      "query": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "difficulty": "hard",
+      "ground_truth": "1755",
+      "final_answer": "The university where Sergei Aleksandrovich Tokarev was a professor is Khakassian State University, which was founded in 1939.",
+      "actual_tools": [
+        "search",
+        "search",
+        "finish",
+        "finish"
+      ],
+      "iteration_count": 3,
+      "agent_finished": true,
+      "answer_correct": false,
+      "answer_score": 0.0,
+      "eval_method": "f1_em",
+      "normalized_predicted": "university where sergei aleksandrovich tokarev was professor is khakassian state university which was founded in 1939",
+      "normalized_ground_truth": "1755",
+      "used_finish": true,
+      "used_search": true,
+      "used_calculator": false,
+      "looped": false,
+      "had_error": false,
+      "error_message": "",
+      "elapsed_seconds": 846.6059024333954,
+      "reflection_count": 2,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "repeated_tool_usage": 1,
+        "generic_failure": 1
+      }
+    }
+  ],
+  "strategyqa": [
+    {
+      "case_id": 654,
+      "benchmark": "strategyqa",
+      "query": "Would a packed Wembley stadium be likely to have a descendant of the Mongols inside?",
+      "difficulty": "medium",
+      "ground_truth": "yes",
+      "final_answer": null,
+      "actual_tools": [
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "iteration_count": 8,
+      "agent_finished": false,
+      "answer_correct": false,
+      "answer_score": 0.0,
+      "eval_method": "boolean_match",
+      "normalized_predicted": "<no answer>",
+      "normalized_ground_truth": "yes",
+      "used_finish": false,
+      "used_search": true,
+      "used_calculator": false,
+      "looped": true,
+      "had_error": false,
+      "error_message": "",
+      "elapsed_seconds": 305.22231698036194,
+      "reflection_count": 7,
+      "reflection_triggered": true,
+      "reflection_categories": {
+        "repeated_tool_usage": 7
+      }
+    }
+  ]
+}

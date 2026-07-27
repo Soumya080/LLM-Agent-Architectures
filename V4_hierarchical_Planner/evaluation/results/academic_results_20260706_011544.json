@@ -1,0 +1,33 @@
+{
+  "gsm8k": [
+    {
+      "case_id": 1309,
+      "benchmark": "gsm8k",
+      "query": "The girls are trying to raise money for a carnival. Kim raises $320 more than Alexandra, who raises $430, and Maryam raises $400 more than Sarah, who raises $300. How much money, in dollars, did they all raise in total?",
+      "difficulty": "medium",
+      "ground_truth": "2280",
+      "final_answer": "The total amount of money raised by all four girls is $1450.",
+      "actual_tools": [
+        "calculator",
+        "finish"
+      ],
+      "iteration_count": 2,
+      "agent_finished": true,
+      "answer_correct": false,
+      "answer_score": 0.0,
+      "eval_method": "numeric_exact_match",
+      "normalized_predicted": "1450.0",
+      "normalized_ground_truth": "2280",
+      "used_finish": true,
+      "used_search": false,
+      "used_calculator": true,
+      "looped": false,
+      "had_error": false,
+      "error_message": "",
+      "elapsed_seconds": 11.126139402389526,
+      "reflection_count": 0,
+      "reflection_triggered": false,
+      "reflection_categories": {}
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+
+============================================================
+  PLANNER AGENT V3 — ACADEMIC BENCHMARK REPORT
+============================================================
+  Timestamp  : 2026-07-20T22:45:39.988031
+  Model      : qwen2.5-coder:7b
+  Max Iter   : 8
+  Total      : 3 cases
+============================================================
+
+────────────────────────────────────────────────────────────
+  GSM8K (Grade School Math) — 1 samples
+────────────────────────────────────────────────────────────
+  Answer Accuracy (EM) :   0.0%  (0/1)
+  Finish Rate          : 100.0%  (1/1)
+  Used Calculator      :   0.0%  (0/1)
+  Average Steps        :   1.0
+  Loop Rate            :   0.0%  (0/1)
+  Error Rate           :   0.0%  (0/1)
+  Avg Time/Query       : 372.0s
+
+  Difficulty Breakdown:
+    MEDIUM    n=  1  acc=  0.0%
+
+────────────────────────────────────────────────────────────
+  HotpotQA (Multi-Hop QA) — 1 samples
+────────────────────────────────────────────────────────────
+  Exact Match          :   0.0%  (0/1)
+  F1 Score             :   0.0%
+  Finish Rate          : 100.0%  (1/1)
+  Used Search          : 100.0%  (1/1)
+  Average Steps        :   3.0
+  Loop Rate            :   0.0%  (0/1)
+  Error Rate           :   0.0%  (0/1)
+  Avg Time/Query       : 846.6s
+
+  Difficulty Breakdown:
+    HARD      n=  1  acc=  0.0%
+
+────────────────────────────────────────────────────────────
+  StrategyQA (Yes/No Reasoning) — 1 samples
+────────────────────────────────────────────────────────────
+  Boolean Accuracy     :   0.0%  (0/1)
+  Finish Rate          :   0.0%  (0/1)
+  Used Search          : 100.0%  (1/1)
+  Average Steps        :   8.0
+  Loop Rate            : 100.0%  (1/1)
+  Error Rate           :   0.0%  (0/1)
+  Avg Time/Query       : 305.2s
+
+  Difficulty Breakdown:
+    MEDIUM    n=  1  acc=  0.0%
+
+============================================================
+  ARCHITECTURE HEALTH (aggregated across all benchmarks)
+============================================================
+  Overall Finish Rate  :  66.7%
+  Overall Loop Rate    :  33.3%
+  Overall Avg Steps    :   4.0
+  Overall Error Rate   :   0.0%
+  Total Runtime        : 1523.9s
+============================================================
+
+============================================================
+  REFLEXION METRICS
+============================================================
+  Reflection Rate:               100.0%
+  Reflection Success Rate:         0.0%
+  Average Reflections per Query:   3.3
+  Most Common Reflection Type:   repeated_tool_usage
+============================================================
+
+────────────────────────────────────────────────────────────
+  SAMPLE INCORRECT ANSWERS (first 15 of 3)
+────────────────────────────────────────────────────────────
+  [gsm8k] ID=1309 (medium)
+    Q:    The girls are trying to raise money for a carnival. Kim
+    Pred: 430.0
+    Gold: 2280
+
+  [hotpotqa] ID=5238 (hard)
+    Q:    In what year was the university where Sergei Aleksandro
+    Pred: university where sergei aleksandrovich tokare
+    Gold: 1755
+
+  [strategyqa] ID=654 (medium)
+    Q:    Would a packed Wembley stadium be likely to have a desc
+    Pred: <no answer>
+    Gold: yes
+
