@@ -1,4 +1,4 @@
-﻿# === Python ===
+# === Python ===
 __pycache__/
 *.pyc
 *.pyo
@@ -20,6 +20,7 @@ env/
 *.swp
 *.swo
 *~
+.copilot-tracking/
 
 # === OS ===
 .DS_Store
@@ -29,3 +30,23 @@ Thumbs.db
 .pytest_cache/
 htmlcov/
 .coverage
+
+# === Logs ===
+*.log
+logs/
+
+# === Scratch / Unrelated ===
+ALERT/
+retroactive_git_push.ps1
+llm_implementation_spec_1
+Synergy*.md
+
+# === Dev Notes / Unrelated Docs ===
+V1_react/notes/
+V1_react/react_V1_agent/
+V3_Planner/01.md
+V3_Planner/career_strategy_report.md
+V3_Planner/csp_roadmap_dashboard.md
+V3_Planner/docs/
+V3_Planner/haystack_issue_12001/
+V4_hierarchical_Planner/docs/

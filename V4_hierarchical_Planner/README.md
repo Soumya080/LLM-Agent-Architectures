@@ -170,8 +170,8 @@ V4_hierarchical_Planner/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hierarchical-planner-agent.git
-cd hierarchical-planner-agent
+git clone https://github.com/Soumya080/LLM-Agent-Architectures.git
+cd LLM-Agent-Architectures/V4_hierarchical_Planner
 ```
 
 ### 2. Install dependencies
@@ -354,5 +354,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 ---
 
 <p align="center">
-  <sub>Built with 🔬 as part of <a href="https://github.com/YOUR_USERNAME">LLM Research Lab</a></sub>
+  <sub>Built with research rigor as part of <a href="https://github.com/Soumya080/LLM-Agent-Architectures">LLM Agent Architectures</a></sub>
 </p>
