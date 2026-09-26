@@ -21,7 +21,7 @@ This repository contains four autonomous agent systems built entirely from scrat
 Every architecture is:
 - **Self-contained** &mdash; each version is a standalone, runnable agent
 - **Locally executable** &mdash; runs on Ollama with no cloud API dependencies
-- **Benchmarked** &mdash; includes a 50-case evaluation suite across 5 task categories
+- **Benchmarked** &mdash; includes an 80-case evaluation suite across 5 task categories, plus GSM8K, HotpotQA and StrategyQA
 - **Tested** &mdash; unit and integration tests for all core components
 
 ---
@@ -148,7 +148,7 @@ python V4_hierarchical_Planner/main.py
 
 ## Evaluation
 
-Each version ships with the same 50-case benchmark suite across 5 categories:
+Each version ships with the same 80-case benchmark suite across 5 categories:
 
 | Category | Description |
 |----------|-------------|
@@ -164,6 +164,16 @@ Run evaluation for any version:
 python V4_hierarchical_Planner/evaluation/run_evaluation.py
 python V4_hierarchical_Planner/evaluation/run_evaluation.py --category arithmetic
 ```
+
+### Scorer audit (V1)
+
+Automatic scores understated V1 on two academic benchmarks. Each answer was re-checked individually (LLM-assisted); every verdict is published next to the automatic score in [`V1_react/evaluation/hand_grading/`](V1_react/evaluation/hand_grading/).
+
+| Benchmark | Automatic score | Checked per answer | Why they differ |
+|-----------|----------------:|-------------------:|-----------------|
+| HotpotQA (n=50) | 0% exact match | 40% | Agent answers in full sentences; exact match needs the bare span |
+| StrategyQA (n=50) | 32% | 44% | `BooleanMatcher` scores any answer containing "not" as "no", and misses "yes" answers phrased as statements |
+| GSM8K (n=50) | 30% | 30% | Numeric check is sound |
 
 ---
 
